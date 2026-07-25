@@ -27,6 +27,7 @@ nav a { color: var(--secondary); text-decoration: none; margin-right: 18px; font
 nav a:hover { color: var(--text); }
 h1 { font-size: 30px; margin: 36px 0 4px; }
 h2 { font-size: 19px; margin-top: 32px; color: var(--text); }
+h3 { font-size: 16px; margin-top: 22px; margin-bottom: 6px; color: var(--text); }
 p, li { color: var(--secondary); font-size: 16px; }
 strong { color: var(--text); }
 .updated { font-size: 13px; color: var(--secondary); margin-bottom: 28px; }

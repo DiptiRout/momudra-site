@@ -18,7 +18,7 @@
     </header>
 
     <h1>Privacy Policy</h1>
-    <p class="updated">Effective date: 1 July 2026</p>
+    <p class="updated">Effective date: 16 July 2026</p>
 
     <p>MoMudra ("the app") is developed by Diptiranjan Rout ("we", "us"). This
     policy explains what data the app handles, where it lives, and what leaves
@@ -38,21 +38,63 @@
     Profile → Data &amp; Backup.</p>
 
     <h2>3. AI features</h2>
-    <p>When you use an AI feature (AI logging, Ask AI, Spending Story,
-    insights), the text you type or dictate and a compact numeric summary of
-    your spending needed to answer (for example category totals or your
-    remaining budget) are sent over an encrypted connection to our server,
-    which forwards them to an AI provider (such as Anthropic or Groq) solely to
-    generate the response. This data is:</p>
+
+    <p><strong>AI features are off until you turn them on.</strong> The first
+    time you try to use one, the app shows you exactly what will be sent and to
+    whom, and asks for your permission. Nothing is sent to any AI provider
+    unless you agree. You can withdraw that permission at any time in
+    Profile → Privacy, which immediately stops all AI features; the rest of the
+    app continues to work.</p>
+
+    <h3>What is sent</h3>
+    <p>When you use an AI feature (AI logging, Ask AI, insights, monthly
+    report), the following is sent over an encrypted connection:</p>
     <ul>
-      <li>used only to produce your answer — never for advertising;</li>
-      <li>not sold or shared with data brokers;</li>
-      <li>not stored by us after the response is returned.</li>
+      <li>the text you type or dictate when logging (for example
+      "coffee 120");</li>
+      <li>your question, when you use Ask AI;</li>
+      <li>a summary of your spending: category totals, the number of
+      transactions, your largest transaction (its amount, its short label and
+      its date), and the date range covered;</li>
+      <li>for Ask AI and reports, additionally: the amount you have free to
+      spend, and the <strong>names and amounts</strong> of your income sources,
+      saving goals and recurring bills;</li>
+      <li>a random install identifier, used only to rate-limit requests.</li>
     </ul>
-    <p>Voice input is transcribed <strong>on your device</strong> by Apple's
-    speech recognition; audio never reaches our servers. If you never use an AI
-    feature, no spending information leaves your device (except via your own
-    iCloud sync, if enabled).</p>
+
+    <h3>What is never sent</h3>
+    <p>Your name, email address, Apple ID, contacts, photos, location, and your
+    full transaction history are never sent to an AI provider.</p>
+
+    <h3>Who it is sent to</h3>
+    <p>Requests go first to our own server, which holds the API credentials and
+    forwards the request to:</p>
+    <ul>
+      <li><strong>Anthropic, PBC</strong> (the Claude API) — processes the
+      request and returns the generated response;</li>
+      <li><strong>Groq, Inc.</strong> — used only as a fallback if Anthropic is
+      unavailable.</li>
+    </ul>
+    <p>Because requests are routed through our server, these providers do not
+    receive your name, email, Apple ID, IP address or device identifiers.</p>
+
+    <h3>How these providers protect your data</h3>
+    <p>We use Anthropic's and Groq's commercial APIs, under business terms which
+    provide protection equivalent to that described in this policy: your inputs
+    are processed solely to generate the response, are <strong>not used to train
+    their models</strong>, are not sold or shared with data brokers, and are not
+    used for advertising or profiling. We do not store your requests or the
+    responses on our servers after the response is returned.</p>
+
+    <h3>Voice input</h3>
+    <p>When you dictate a transaction, the audio is transcribed by
+    <strong>Apple's</strong> speech recognition — on your device where your
+    device and language support it, and otherwise by Apple's servers. Audio
+    never reaches our servers and is never sent to Anthropic or Groq; only the
+    resulting text is, and only if you have allowed AI features.</p>
+
+    <p>If you never turn on AI features, no spending information leaves your
+    device (except via your own iCloud sync, if you enable it).</p>
 
     <h2>4. Anonymous usage analytics</h2>
     <p>To understand which features are used and to protect the service from
